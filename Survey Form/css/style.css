@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body{
+	background-color: #a0db8e;
+	text-align: center;
+	font-family: Open Sans, Helvetica, sans-serif;
+	min-width: 320px;
+}
+
+head{
+	font-size: 2em;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#mainform{
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	width: 70%;	
+	margin: 0px auto;
+}
+
+#description{
+	padding: 20px;
+	font-size: 20px;
+}	
+
+.rowLabel{
+	display: inline-block;
+	text-align: right;
+	padding: 5px;
+	width: 40%;
+	vertical-align: top;
+}
+
+.rowInput{
+	display: inline-block;
+	text-align: left;
+	width: 40%;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.input-field{
+	width: 70%;
+	border: 1px solid grey;
+	border-radius: 2px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+  padding-top: -10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}	
