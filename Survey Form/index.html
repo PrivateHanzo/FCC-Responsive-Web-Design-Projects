@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0">
+	<title>FCC: Survey Form</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<div id="main">
+		<h1 id="title">Survey Form</h1>
+		<div id="mainform">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+			<form id="survey-form" method="GET">
+				<div class="formRow">
+					<div class="rowLabel">
+						<label id="name-label" for="name">*Name:</label>
+					</div>
+					<div class="rowInput">		
+						<input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required/>
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="rowLabel">
+						<label id="email-label" for="email">*Email:</label>
+					</div>	
+					<div class="rowInput">
+						<input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required/>
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="rowLabel">
+						<label id="number-label" for="age">*Age:</label>
+					</div>
+					<div class="rowInput">
+						<input type="number" min="1" max="100" name="age" id="number" class="input-field" placeholder="Your age" />
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="rowLabel">
+						<label for="currentPos">Which option best describes your current role?</label>
+					</div>
+					<div class="rowInput">
+						<select id="dropdown" name="currentPos" class="dropdown">
+							<option value="student">Student</option>
+							<option value="job">Full time job</option>
+							<option value="learner">Full time learner</option>
+							<option value="preferNot">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="rowLabel">
+						<label id="recomment-label" for="recommend">*How likely are you to recomment FCC to a friend?</label>
+					</div>
+					<div class="rowInput">
+						<ul id="preferences" style="list-style: none">
+							<li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="userRatings">Definitely</label></li>
+							<li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="userRatings">Maybe</label></li>
+							<li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="userRatings">No</label></li>
+						</ul>
+					</div>
+				</div>		
+				<div class="formRow">
+					<div class="rowLabel">
+						<label for="preferences">Things that should be improved in the future (Check all that apply):</label>
+					</div>
+					<div class="rowInput">
+						<ul id="preferences" style="list-style: none">
+							<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+							<li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</label></li>
+							<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+							<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+							<li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="rowLabel">
+						<label for="comments">Any Comments or Suggestions?</label>
+					</div>
+					<div class="rowInput">
+						<textarea id="comments" class="input-field" name="comment" placeholder="Enter your comments here..."></textarea>
+					</div>
+				</div>
+				<button id="submit" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
